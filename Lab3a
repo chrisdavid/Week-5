@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Lab3a {
+	public static void main(String[] args )
+	{
+		int computerNum;
+		computerNum = 0 + (int) ( Math.random() * 3 );
+		Scanner input = new Scanner( System.in );
+	     	int number1;
+		System.out.print( "Enter the integer: " );
+       		number1 = input.nextInt();
+	     
+		System.out.printf("Random number is %d\n", computerNum );
+		
+		if (( number1 == 1 ) && ( computerNum == 2 )) 
+		
+            	System.out.println( "User number is 1 and random number is 2"  );
+		
+		if (( number1 == 1 ) || ( computerNum == 1 )) 
+		
+            	System.out.println( "User number is 1 or random number is 1" );
+			
+  
+	}
+
+}
