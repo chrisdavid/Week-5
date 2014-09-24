@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Lab6 {
+
+public static void main(String[] args) {
+
+Scanner inp = new Scanner( System.in );
+
+	int userNum;
+
+	int computerNum;
+		
+	int count = 1;
+	do {
+		System.out.println("Count is: " + count); count++;
+
+		computerNum = 0 + (int) ( Math.random() * 10 );
+
+		System.out.println ("Enter a number between 0 and 10");
+
+		userNum = inp.nextInt();
+
+		System.out.printf("Random number is %d\n", computerNum );
+
+	if (userNum > computerNum) { System.out.println ("Too big");
+
+		}
+
+	else if (userNum < computerNum) { System.out.println ("Too Small");
+
+		}
+
+	else { System.out.println ("Match");
+
+		 }
+
+	}
+	while (count < 4); 
+	System.out.println("Bye!");
+
+	 }
+
+		
+}
