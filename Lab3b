@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class Lab3b {
+	public static void main (String[] args)
+	{
+		int computerNum;
+		computerNum = 0 + (int) ( Math.random() * 3 );
+		Scanner input = new Scanner( System.in );
+	     	int number1;
+		System.out.print( "Enter the integer: " );
+       		number1 = input.nextInt();
+       		System.out.printf("Random number is %d\n", computerNum );
+	     String answer;   
+	     
+		answer = (number1 > computerNum)? "too high" : "too low";
+		if (number1 == computerNum)
+			answer = "Match";
+		System.out.println(answer);
+		
+	}
+}
