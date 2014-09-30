@@ -151,3 +151,5 @@ public class RPS
     }
 
 }
+
+// Good job, but please considering using all r/p/s to make the if statements more readbable.
